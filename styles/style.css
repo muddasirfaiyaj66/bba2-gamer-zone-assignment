@@ -1,0 +1,74 @@
+/* Common styles  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* nav styles  */
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 80px;
+    height: 40px;
+}
+
+.nav-logo h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.nav-logo h1 span {
+    color: #FF42A5;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+
+}
+
+.nav-links ul li>a {
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-follow-us-box{
+   background-color:  rgba(11, 2, 35, 0.10);
+   padding: 15px 15px;
+   border-radius: 5px;
+   margin-top: -10px;
+
+}
+/* responsive styles  */
+ /* for mobile  */
+ @media screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+        height: 50vh;
+        text-align: center;
+        padding: 5px;
+        
+    }
+    .nav-links ul{
+        flex-direction: column;
+
+    }
+ }
+ /* for tablet  */
+ @media screen and (min-width:576px) and (max-width:960px) {
+    .nav-links ul{
+        gap: 30px;
+    }
+ }
